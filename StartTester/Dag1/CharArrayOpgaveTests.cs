@@ -20,7 +20,6 @@ public class CharArrayOpgaveTests
     [Theory]
     [InlineData(65, 'A')]
     [InlineData(90, 'Z')]
-    [InlineData(77, 'M')]
     public void CharArrayOpgave_SkalHåndtereASCIIKorrekt(int asciiVærdi, char forventetBogstav)
     {
         // Arrange

@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace OpgaverTests.Dag3Tests
 {
-    public class RekursionsOpgaveTests
+    [Collection("Sequential")]
+    public class BeregnFakultetTests
     {
         private readonly Dag3 _dag3;
 
-        public RekursionsOpgaveTests()
+        public BeregnFakultetTests()
         {
             _dag3 = new Dag3();
         }
@@ -34,6 +35,17 @@ namespace OpgaverTests.Dag3Tests
 
             // Assert
             Assert.Contains("Fakultet af 5: 120", result);
+        }
+    }
+
+    [Collection("Sequential")]
+    public class NedtællingTests
+    {
+        private readonly Dag3 _dag3;
+
+        public NedtællingTests()
+        {
+            _dag3 = new Dag3();
         }
 
         [Fact]
